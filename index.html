@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Bibliothèque</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📚 Ma Bibliothèque</h1>
+
+    <p>Mes lectures et avis personnels</p>
+
+</header>
+
+<div class="admin-zone">
+
+    <button id="adminBtn"
+            class="admin-btn">
+
+        📚 Administration
+
+    </button>
+
+</div>
+
+<nav id="filtres"></nav>
+
+<section class="search-zone">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Rechercher un livre ou un auteur..."
+    >
+
+</section>
+
+<main id="bibliotheque">
+
+</main>
+
+
+
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-content login-box">
+
+        <h2>📚 Accès Bibliothécaire</h2>
+
+        <p>Code PIN</p>
+
+        <input
+            type="password"
+            id="adminCode"
+            maxlength="4"
+            placeholder="••••">
+
+        <button id="loginBtn">
+            Entrer
+        </button>
+
+    </div>
+
+</div>
+
+<div id="adminModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <h2>Gestion de la bibliothèque</h2>
+
+    <form id="bookForm">
+
+      <input type="hidden" id="bookId">
+
+      <label>Titre</label>
+      <input type="text" id="titre" required>
+
+      <label>Auteur</label>
+      <input type="text" id="auteur" required>
+      
+      <label>Statut</label>
+
+<select id="statut">
+    <option value="lu">Lu</option>
+    <option value="alire">À lire</option>
+</select>
+
+      <label>Année</label>
+      <input type="number" id="année" required>
+
+      <label>Date de lecture</label>
+      <input type="text" id="dateLecture">
+
+      <label>Support</label>
+      <input type="text" id="support">
+
+      <label>Statut</label>
+
+      <label>Note</label>
+      <input type="number" id="rating" min="0" max="5">
+
+      <label>Image</label>
+      <input type="text" id="image">
+
+      <label>Avis</label>
+      <textarea id="avis"></textarea>
+
+      <label>Résumé</label>
+      <textarea id="resume"></textarea>
+
+      <button type="submit">
+        Enregistrer
+      </button>
+
+    </form>
+
+    <hr>
+
+    <h3>Livres enregistrés</h3>
+
+    <h3>Gestion des livres</h3>
+
+<select id="bookSelector">
+
+    <option value="">
+        Choisir un livre...
+    </option>
+
+</select>
+
+<div style="margin-top:15px;">
+
+    <button type="button" id="editSelected"></button>
+        ✏️ Modifier
+    </button>
+
+    <button type="button" id="deleteSelected"></button>
+        🗑️ Supprimer
+    </button>
+
+</div>
+
+    <button id="exportJson">
+      💾 Export JSON
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

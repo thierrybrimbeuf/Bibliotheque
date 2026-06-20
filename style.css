@@ -777,3 +777,68 @@ button[data-annee="alire"]{
 
     background:#b91c1c;
 }
+
+/* =====================================
+   FICHE DETAILLEE
+   ===================================== */
+
+.modal-detail{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.85);
+
+    z-index:5000;
+}
+
+.detail-content{
+
+    background:#1f2937;
+
+    color:white;
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+}
+
+.detail-cover{
+
+    display:block;
+
+    margin:auto;
+
+    max-height:450px;
+
+    max-width:100%;
+}
+
+.close-detail{
+
+    float:right;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    color:#f8d27a;
+}
+
+.detail-content h3{
+
+    color:#f8d27a;
+
+    margin-top:25px;
+}

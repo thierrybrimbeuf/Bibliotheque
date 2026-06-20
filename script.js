@@ -39,7 +39,16 @@ bookForm.addEventListener("submit", e => {
 
     note: parseInt(document.getElementById("rating").value),
 
-    avis: document.getElementById("avis").value,
+    isbn:
+document.getElementById("isbn").value,
+
+critique:
+document.getElementById("critique").value,
+
+avisPersonnel:
+document.getElementById(
+    "avisPersonnel"
+).value,
 
     resume: document.getElementById("resume").value
 };
@@ -133,9 +142,16 @@ function afficherLivres(livres) {
 
         bibliotheque.innerHTML += `
 
-        <article class="livre-card">
+       <article
+    class="livre-card"
+    onclick="ouvrirLivre(${livre.id})"
+>
 
-            <img src="${livre.image}" alt="${livre.titre}">
+            <img
+    src="${imageLivre(livre)}"
+    alt="${livre.titre}"
+    onerror="this.src='images/pas-de-couverture.jpg'"
+>
 
             <div class="contenu">
 
@@ -244,7 +260,19 @@ document.getElementById("image").value = b.image || "";
 
 document.getElementById("rating").value = b.note || "";
 
-document.getElementById("avis").value = b.avis || "";
+document.getElementById(
+    "isbn"
+).value = b.isbn || "";
+
+document.getElementById(
+    "critique"
+).value = b.critique || "";
+
+document.getElementById(
+    "avisPersonnel"
+).value =
+    b.avisPersonnel || "";
+    
 document.getElementById("resume").value = b.resume || "";
 
 document.getElementById("statut").value =
@@ -410,5 +438,79 @@ loginBtn.addEventListener("click", () => {
             "Code bibliothécaire incorrect"
         );
     }
+
+});
+
+function imageLivre(book){
+
+    return book.image && book.image !== ""
+        ? book.image
+        : "images/pas-de-couverture.jpg";
+
+}
+
+function ouvrirLivre(id){
+
+    const livre =
+        books.find(b => b.id == id);
+
+    if(!livre) return;
+
+    document.getElementById(
+        "detailImage"
+    ).src = imageLivre(livre);
+
+    document.getElementById(
+        "detailTitre"
+    ).textContent = livre.titre || "";
+
+    document.getElementById(
+        "detailAuteur"
+    ).textContent = livre.auteur || "";
+
+    document.getElementById(
+        "detailDate"
+    ).textContent = livre.dateLecture || "";
+
+    document.getElementById(
+        "detailSupport"
+    ).textContent = livre.support || "";
+
+    document.getElementById(
+        "detailIsbn"
+    ).textContent = livre.isbn || "";
+
+    document.getElementById(
+        "detailResume"
+    ).textContent = livre.resume || "";
+
+    document.getElementById(
+        "detailCritique"
+    ).textContent = livre.critique || "";
+
+    document.getElementById(
+        "detailAvis"
+    ).textContent =
+        livre.avisPersonnel || "";
+
+    document.getElementById(
+        "detailNote"
+    ).textContent =
+        livre.note
+        ? etoiles(livre.note)
+        : "Non noté";
+
+    document.getElementById(
+        "detailModal"
+    ).style.display = "block";
+}
+
+document
+.getElementById("closeDetail")
+?.addEventListener("click",()=>{
+
+    document.getElementById(
+        "detailModal"
+    ).style.display = "none";
 
 });

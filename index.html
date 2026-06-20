@@ -113,11 +113,17 @@
       <label>Image</label>
       <input type="text" id="image">
 
-      <label>Avis</label>
-      <textarea id="avis"></textarea>
+      <label>ISBN</label>
+      <input type="text" id="isbn">
 
       <label>Résumé</label>
       <textarea id="resume"></textarea>
+
+      <label>Critique</label>
+      <textarea id="critique"></textarea>
+
+<label>Mon avis personnel</label>
+<textarea id="avisPersonnel"></textarea>
 
       <button type="submit">
         Enregistrer
@@ -156,6 +162,59 @@
     </button>
 
   </div>
+
+</div>
+
+<div id="detailModal" class="modal-detail">
+
+    <div class="detail-content">
+
+        <span id="closeDetail" class="close-detail">&times;</span>
+
+        <img id="detailImage"
+             class="detail-cover"
+             src=""
+             alt="Couverture">
+
+        <h2 id="detailTitre"></h2>
+
+        <p>
+            <strong>Auteur :</strong>
+            <span id="detailAuteur"></span>
+        </p>
+
+        <p>
+            <strong>Date :</strong>
+            <span id="detailDate"></span>
+        </p>
+
+        <p>
+            <strong>Support :</strong>
+            <span id="detailSupport"></span>
+        </p>
+
+        <p>
+            <strong>ISBN :</strong>
+            <span id="detailIsbn"></span>
+        </p>
+
+        <p>
+            <strong>Note :</strong>
+            <span id="detailNote"></span>
+        </p>
+
+        <hr>
+
+        <h3>📖 Résumé</h3>
+        <p id="detailResume"></p>
+
+        <h3>📰 Critique</h3>
+        <p id="detailCritique"></p>
+
+        <h3>💬 Mon avis personnel</h3>
+        <p id="detailAvis"></p>
+
+    </div>
 
 </div>
 

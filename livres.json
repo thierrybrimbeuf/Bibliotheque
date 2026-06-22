@@ -688,7 +688,7 @@
    "resume":"Dans un univers inspiré des légendes celtiques, les héritiers d'un ancien savoir affrontent des forces obscures liées au mystérieux site de Stonehenge. Le passé ressurgit avec une puissance inattendue.",
 "critique":"Une BD d'aventure qui mêle mythologie, fantastique et suspense avec efficacité.",
     "avisPersonnel": "A relire!",
-    "note": 0,
+    "note": 3,
     "statut": "lu"
   },
   {
@@ -698,12 +698,12 @@
     "annee": 2025,
     "dateLecture": "2025",
     "support": "Livre",
-    "image": "",
+    "image": "images/Nous-les-Allemands.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"À la fin de la Seconde Guerre mondiale, plusieurs Allemands tentent de reconstruire leur existence tout en faisant face au poids du passé. Entre culpabilité, silence et mémoire, chacun cherche sa place.",
+"critique":"Un roman profond qui interroge la responsabilité collective et la transmission de l'histoire.",
     "avisPersonnel": "A relire!",
-    "note": 0,
+    "note": 4
     "statut": "lu"
   },
   {
@@ -713,12 +713,12 @@
     "annee": 2025,
     "dateLecture": "Janvier 2025",
     "support": "BD",
-    "image": "",
+    "image": "images/Stonehenge-T01-Erin.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Une jeune femme découvre qu'elle est liée à une ancienne prophétie associée à Stonehenge. Son destin se retrouve rapidement mêlé à des événements qui dépassent son imagination.",
+"critique":"Un second volume qui développe efficacement l'univers mis en place dans la série.",
+    "avisPersonnel": "A relire!",
+    "note": 3
     "statut": "lu"
   },
   {
@@ -728,12 +728,12 @@
     "annee": 2025,
     "dateLecture": "2025",
     "support": "BD",
-    "image": "",
+    "image": "images/Helene-boucher-l-etoile-filante.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Cette bande dessinée retrace la vie exceptionnelle d'Hélène Boucher, pionnière de l'aviation française. Son parcours témoigne du courage et de la détermination des premières aviatrices.",
+"critique":"Une biographie accessible et inspirante qui met en lumière une figure méconnue de l'histoire aéronautique.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 4,
     "statut": "lu"
   },
   {
@@ -745,10 +745,10 @@
     "support": "Livre",
     "image": "images/La_nuit_des_temps.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Lors d'une expédition scientifique en Antarctique, une équipe découvre sous la glace une civilisation disparue depuis des millénaires. Cette révélation pourrait bouleverser la compréhension de l'humanité.",
+"critique":"Un classique de la science-fiction française. René Barjavel mêle aventure, romance et réflexion avec un remarquable sens du récit.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 4
     "statut": "lu"
   },
   {
@@ -758,12 +758,12 @@
     "annee": 2025,
     "dateLecture": "2025",
     "support": "Livre",
-    "image": "",
+    "image": "images/Contagion.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Lors d'une expédition scientifique en Antarctique, une équipe découvre sous la glace une civilisation disparue depuis des millénaires. Cette révélation pourrait bouleverser la compréhension de l'humanité.",
+"critique":"Un classique de la science-fiction française. René Barjavel mêle aventure, romance et réflexion avec un remarquable sens du récit.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 3
     "statut": "lu"
   },
   {
@@ -775,10 +775,10 @@
     "support": "Livre",
     "image": "images/Khadija.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Marek Halter retrace la destinée de Khadija, première épouse du prophète Mahomet. Femme d'affaires influente et indépendante, elle joue un rôle essentiel dans les débuts de l'islam.",
+"critique":"Un roman historique qui permet de découvrir une personnalité majeure souvent méconnue du grand public.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 4
     "statut": "lu"
   },
   {
@@ -788,12 +788,13 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "Livre",
-    "image": "",
+    "image": "images/Jackdaw.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Une série de meurtres particulièrement violents plonge la police dans une enquête difficile. Les indices semblent désigner un adversaire aussi intelligent qu'imprévisible.",
+"critique":"Daniel Cole construit un thriller nerveux où les rebondissements s'enchaînent jusqu'au dénouement.",
+
+    "avisPersonnel": "peu de souvenir donc ...",
+    "note": 2
     "statut": "lu"
   },
   {
@@ -803,12 +804,12 @@
     "annee": 2024,
     "dateLecture": "Novembre  2024",
     "support": "Livre",
-    "image": "",
+    "image": "images/Ne-me-remerciez-pas.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+   "resume":"Avec humour et autodérision, l'auteur raconte ses rencontres, ses découvertes et les situations improbables auxquelles il a été confronté au fil des années.",
+"critique":"Un ouvrage léger et divertissant qui repose largement sur la personnalité de son auteur.",
+    "avisPersonnel": "bof! assez moyen en fait",
+    "note": 3,
     "statut": "lu"
   },
   {
@@ -818,12 +819,12 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "Livre",
-    "image": "",
+    "image": "images/Neandertal-a-la-plage.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+   "resume":"Que savons-nous réellement des Néandertaliens ? À travers les découvertes archéologiques récentes, les auteurs déconstruisent de nombreuses idées reçues sur nos cousins préhistoriques.",
+"critique":"Une excellente vulgarisation scientifique qui rend accessibles les dernières avancées de la recherche.",
+    "avisPersonnel": "Tres bien et facile à lire; enrichissant",
+    "note": 5,
     "statut": "lu"
   },
   {
@@ -835,10 +836,10 @@
     "support": "Livre",
     "image": "images/Les_ombres_et_les_lumières.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"En 1920, au cœur des Années Folles, Jules et Anna arrivent dans une petite ville thermale de Gascogne pour prendre la direction d'un cinéma. Mais le jeune couple se heurte à l’hostilité permanente de ces notables du sud-ouest de la France qui ne veulent pas d’étrangers.L’atmosphère de la ville devient encore plus oppressante quand on découvre le corps d’une jeune femme. En apparence, il s’agit d’un suicide, mais les circonstances rappellent étrangement la disparition d’une autre femme quelques années plus tôt et dont le corps vient juste d’être retrouvé.Parce que les autorités se désintéressent de ces affaires, Anna décide de découvrir la vérité. Mais, dans cette région où les blessures de la guerre sont encore à vif, on ne déterre pas impunément des secrets que beaucoup voudraient garder enfouis…",
+"critique":"Un roman sensible qui met en avant la complexité des relations humaines et la force de la mémoire.",
+    "avisPersonnel": "Très bien",
+    "note": 5,
     "statut": "lu"
   },
   {
@@ -848,12 +849,12 @@
     "annee": 2024,
     "dateLecture": "Octobre 2024",
     "support": "BD",
-    "image": "",
+    "image": "images/La-Horde-du-contrevent-T01-Le-Cosmos-est-mon-campement.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Cette bande dessinée retrace l'extraordinaire aventure de scientifiques, d'explorateurs et de rêveurs qui ont cherché à comprendre l'univers et la place de l'homme dans le cosmos.",
+"critique":"Une BD ambitieuse qui réussit à rendre passionnante une thématique scientifique complexe.",
+    "avisPersonnel": " Je n'ai pas accroché; abandon apres quelaques pages ",
+    "note": 1,
     "statut": "lu"
   },
   {
@@ -865,10 +866,10 @@
     "support": "Livre",
     "image": "images/LUX.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Lorsqu'une mystérieuse menace surgit simultanément dans plusieurs régions du monde, les autorités sont dépassées. Une course contre la montre s'engage pour éviter une catastrophe mondiale.",
+"critique":"Maxime Chattam livre un thriller spectaculaire, rythmé et particulièrement efficace.",
+    "avisPersonnel": "Un revisite du roman de Barjavel : La nuit des temps :bof!",
+    "note": 3,
     "statut": "lu"
   },
   {
@@ -880,10 +881,10 @@
     "support": "Livre",
     "image": "",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Une famille ukrainienne traverse les grandes tragédies du XXe siècle, entre guerre, exil et bouleversements politiques. Le passé continue d'influencer profondément les générations suivantes.",
+"critique":"Un roman historique émouvant qui éclaire une partie méconnue de l'histoire de l'Europe de l'Est.",
+    "avisPersonnel": "Tres bien! permet de comprendre un peu  les évènements géopolitiques actuels",
+    "note": 5,
     "statut": "lu"
   },
   {
@@ -893,12 +894,12 @@
     "annee": 2024,
     "dateLecture": "Septembre 2024",
     "support": "BD",
-    "image": "",
+    "image": "images/Les-Cahiers-d-Esther-tome-2-Histoires-de-mes-11-ans.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"À travers le regard d'une adolescente, ce deuxième volume des Cahiers d'Esther poursuit l'exploration du quotidien des jeunes Français. École, famille, amitiés et société sont observées avec humour.",
+"critique":"Riad Sattouf confirme son talent d'observateur. Une chronique à la fois drôle, tendre et souvent très juste.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 4,
     "statut": "lu"
   },
   {
@@ -908,12 +909,12 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "BD",
-    "image": "",
+    "image": "images/Les-Cahiers-d-Esther-tome-1-Histoires-de-mes-10-ans.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Esther a grandi d'une année et son regard sur le monde s'affine. Entre les réseaux sociaux, la vie scolaire, les amitiés et les préoccupations de son âge, elle raconte avec spontanéité le quotidien d'une adolescente française.",
+"critique":"Riad Sattouf poursuit son observation fine et souvent drôle de la jeunesse contemporaine. Une chronique générationnelle pleine de justesse.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 4,
     "statut": "lu"
   },
   {
@@ -923,12 +924,12 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "Livre",
-    "image": "",
+    "image": "images/Le-chant-de-la-vengeance.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+   "resume":"Dans une région sauvage du nord-ouest américain, une jeune femme refuse de se soumettre aux règles imposées par la société de son époque. Sa quête de liberté la conduit sur un chemin semé de dangers et de vengeance.",
+"critique":"Megan Chance signe un roman historique intense, porté par une héroïne forte et un décor magnifiquement exploité.",
     "avisPersonnel": "",
-    "note": 0,
+    "note": 3,
     "statut": "lu"
   },
   {
@@ -938,12 +939,12 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "Livre",
-    "image": "",
+    "image": "images/L-Endroit-le-plus-merveilleux-au-monde.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Dans une ville marquée par les bouleversements politiques et sociaux, plusieurs personnages cherchent un refuge où reconstruire leur existence. Mais les blessures du passé ne disparaissent jamais totalement.",
+"critique":"Un roman subtil qui mêle destin individuel et histoire contemporaine avec une grande sensibilité.",
+    "avisPersonnel": "Pas terrible, mais j'ai réussi à le finir",
+    "note": 2,
     "statut": "lu"
   },
   {
@@ -955,8 +956,8 @@
     "support": "Livre",
     "image": "images/Soudain,_seuls.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
+    "resume":"Un couple accepte de garder une station météorologique sur une île isolée de l'océan Austral. Lorsque le navire censé les récupérer ne revient pas, ils se retrouvent seuls face à la nature et à leurs propres limites.",
+"critique":"Isabelle Autissier livre un huis clos saisissant où la survie devient une expérience psychologique autant que physique.",
     "avisPersonnel": "",
     "note": 0,
     "statut": "lu"
@@ -968,12 +969,12 @@
     "annee": 2024,
     "dateLecture": "2024",
     "support": "BD",
-    "image": "",
+    "image": "images/De-cape-et-de-crocs-t03-l-archipel-du-danger.jpg",
     "isbn": "",
-    "resume": "",
-    "critique": "",
-    "avisPersonnel": "",
-    "note": 0,
+    "resume":"Dans un monde d'aventure, de complots et de mystères, deux gentilshommes aussi différents qu'inséparables poursuivent leur quête à travers mers et royaumes. Ce troisième volume enrichit encore leur incroyable périple.",
+"critique":"Une série de bande dessinée brillante, mêlant humour, érudition et aventure avec un remarquable sens du récit.",
+    "avisPersonnel": "A lire et a relire sans modération ; excellent!",
+    "note": 5,
     "statut": "lu"
   },
   {

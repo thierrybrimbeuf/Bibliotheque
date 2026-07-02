@@ -113,8 +113,6 @@
       <label>Image</label>
       <input type="text" id="image">
 
-      <label>ISBN</label>
-      <input type="text" id="isbn">
 
       <label>Résumé</label>
       <textarea id="resume"></textarea>
@@ -125,7 +123,7 @@
 <label>Mon avis personnel</label>
 <textarea id="avisPersonnel"></textarea>
 
-      <button type="submit">
+      <button type="submit" id="saveBtn">
         Enregistrer
       </button>
 
@@ -147,11 +145,11 @@
 
 <div style="margin-top:15px;">
 
-    <button type="button" id="editSelected"></button>
+    <button type="button" id="editSelected">
         ✏️ Modifier
     </button>
 
-    <button type="button" id="deleteSelected"></button>
+    <button type="button" id="deleteSelected">
         🗑️ Supprimer
     </button>
 
@@ -191,11 +189,6 @@
         <p>
             <strong>Support :</strong>
             <span id="detailSupport"></span>
-        </p>
-
-        <p>
-            <strong>ISBN :</strong>
-            <span id="detailIsbn"></span>
         </p>
 
         <p>

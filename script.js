@@ -39,9 +39,6 @@ bookForm.addEventListener("submit", e => {
 
     note: parseInt(document.getElementById("rating").value),
 
-    isbn:
-document.getElementById("isbn").value,
-
 critique:
 document.getElementById("critique").value,
 
@@ -175,7 +172,7 @@ function afficherLivres(livres) {
 
                 <h3>Mon avis</h3>
 
-                <p>${livre.avis}</p>
+                <p>${livre.avisPersonnel || ""}</p>
 
                 <details>
 
@@ -261,10 +258,6 @@ document.getElementById("image").value = b.image || "";
 document.getElementById("rating").value = b.note || "";
 
 document.getElementById(
-    "isbn"
-).value = b.isbn || "";
-
-document.getElementById(
     "critique"
 ).value = b.critique || "";
 
@@ -278,9 +271,6 @@ document.getElementById("resume").value = b.resume || "";
 document.getElementById("statut").value =
     b.statut || "lu";
 
-    document.getElementById("statut").value =
-    b.statut || "lu";
-
   const saveBtn =
     document.getElementById("saveBtn");
 
@@ -288,12 +278,9 @@ if(saveBtn){
     saveBtn.textContent =
         "💾 Enregistrer les modifications";
 }
-console.log("Avant changement bouton");
-
 document.getElementById("saveBtn").textContent =
     "💾 Enregistrer les modifications";
 
-console.log("Après changement bouton");
 }
 
 
@@ -434,9 +421,9 @@ loginBtn.addEventListener("click", () => {
 
     }else{
 
-        alert(
-            "Code bibliothécaire incorrect"
-        );
+        alert("Code bibliothécaire incorrect");
+        document.getElementById("adminCode").value="";
+        loginModal.style.display="none";
     }
 
 });
@@ -476,11 +463,7 @@ function ouvrirLivre(id){
         "detailSupport"
     ).textContent = livre.support || "";
 
-    document.getElementById(
-        "detailIsbn"
-    ).textContent = livre.isbn || "";
-
-    document.getElementById(
+        document.getElementById(
         "detailResume"
     ).textContent = livre.resume || "";
 

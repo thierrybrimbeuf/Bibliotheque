@@ -22,9 +22,13 @@ bookForm.addEventListener("submit", e => {
 
     e.preventDefault();
 
+    const nouvelId = document.getElementById("bookId").value
+    ? Number(document.getElementById("bookId").value)
+    : Math.max(...books.map(b => Number(b.id)), 0) + 1;
+
     const book = {
 
-    id: document.getElementById("bookId").value || Date.now(),
+    id: nouvelId,
 
     titre: document.getElementById("titre").value,
     auteur: document.getElementById("auteur").value,
@@ -54,15 +58,32 @@ document.getElementById(
         b => b.id == book.id
     );
 
-    if(index >= 0){
-        books[index] = book;
-    }else{
-        books.push(book);
+  if(index >= 0){
+
+    books[index] = book;
+
+    const idx =
+        tousLesLivres.findIndex(
+            b => b.id == book.id
+        );
+
+    if(idx >= 0){
+        tousLesLivres[idx] = book;
     }
 
-    
-    afficherLivres(books);
-    updateAdminList();
+}else{
+
+    books.push(book);
+    tousLesLivres.push(book);
+
+}
+
+creerFiltresAnnees();
+
+afficherLivres(books);
+
+updateAdminList();
+
     const saveBtn =
     document.getElementById("saveBtn");
 

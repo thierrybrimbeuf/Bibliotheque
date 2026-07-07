@@ -1839,5 +1839,33 @@
     "critique": "John Grisham signe un thriller judiciaire original, où le suspense repose davantage sur les motivations du personnage que sur l'identité du meurtrier. La richesse des personnages, la reconstitution de l'Amérique de l'après-guerre et la maîtrise de la narration font de ce roman une lecture aussi captivante qu'émouvante.",
     "avisPersonnel": "Excellent!",
     "resume": "Automne 1946, dans une petite ville du Mississippi. Héros de la Seconde Guerre mondiale, propriétaire respecté et père de famille exemplaire, Pete Banning commet un acte aussi brutal qu'incompréhensible : il abat froidement le pasteur de sa communauté. Arrêté aussitôt, il refuse obstinément d'expliquer son geste, laissant ses proches, ses avocats et les habitants de Clanton face à un silence déroutant. Tandis que la justice suit son cours, le passé de Pete ressurgit peu à peu, révélant une histoire marquée par la guerre, les secrets et les blessures profondes. Une enquête où la véritable question n'est pas de savoir qui est le coupable, mais pourquoi il a agi ainsi."
+  },
+  {
+    "id": 125,
+    "titre": "Le secret de la tour du temple",
+    "auteur": "Vaillard, Gaële ",
+    "annee": 2026,
+    "dateLecture": "Juin",
+    "support": "Livre",
+    "statut": "lu",
+    "image": "images/Le-secret-de-la-tour-du-Temple.jpg",
+    "note": 3,
+    "critique": "Gaële Vaillard signe un roman historique captivant où l'aventure, les mystères familiaux et la grande Histoire s'entremêlent avec habileté. Porté par une héroïne attachante et une reconstitution soignée de la France du XIXᵉ siècle, le récit offre une lecture immersive et pleine de rebondissements.",
+    "avisPersonnel": "Globalement intéressant, mais un peu long ou les intrigues amoureuses prennent trop de place et rendent l'histoire peu réaliste. L'aspect historique n'est pas si captivant  ",
+    "resume": "Près de Nantes, en 1810, Julie Chesnay grandit dans la misère, rejetée par un père violent et méprisée par tout son entourage. Après avoir cru trouver une existence plus sereine au service d'une riche famille de laboureurs, elle est contrainte de fuir pour échapper à de nouvelles épreuves. Commence alors un long voyage à travers la France, où elle côtoie aussi bien les bas-fonds que les cercles du pouvoir. Guidée par le désir de comprendre ses origines, Julie se lance dans une quête semée de dangers, de rencontres décisives et de secrets enfouis, sur fond de France postrévolutionnaire."
+  },
+  {
+    "id": 126,
+    "titre": "Le Violon d'Auschwitz",
+    "auteur": " Maria Angels, Anglada ",
+    "annee": 2026,
+    "dateLecture": "Juillet",
+    "support": "Livre",
+    "statut": "lu",
+    "image": "images/Le-violon-d-Auschwitz.jpg",
+    "note": 5,
+    "critique": "Maria Àngels Anglada livre un roman d'une grande intensité émotionnelle, où la musique devient un symbole d'espoir et de dignité au cœur de l'horreur. Par une écriture sobre et sensible, enrichie de documents historiques authentiques, elle compose un récit poignant qui rend un vibrant hommage à la résilience de l'esprit humain.",
+    "avisPersonnel": "Les livres sur les camps de la seconde guerre mondiale sont toujour difficile , mais cela reste un roman captivant et riche d'enseignement",
+    "resume": "Auschwitz, 1944. Déporté dans le camp de concentration, Daniel lutte chaque jour pour préserver son humanité au milieu de la violence et de la déshumanisation. Lorsque son talent de luthier est découvert après un concert organisé par le commandant du camp, il se voit confier une mission aussi exceptionnelle que périlleuse : fabriquer un violon capable d'égaler le son d'un Stradivarius. Tandis que le temps lui est compté et que l'échec pourrait lui être fatal, Daniel puise dans son savoir-faire et son amour de la musique une force inattendue. Entre réalité historique et fiction, ce récit met en lumière le pouvoir de l'art face à la barbarie"
   }
 ]

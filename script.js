@@ -1,6 +1,21 @@
 let tousLesLivres = [];
 let books = [];
 
+const MOIS = [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre"
+];
+
 fetch("livres.json")
     .then(response => response.json())
     .then(data => {
@@ -10,11 +25,12 @@ fetch("livres.json")
 
         afficherLivres(data);
 
-        creerFiltresAnnees();
+creerFiltresAnnees();
 
-        
-        updateAdminList();
+initialiserFormulaire();
 
+updateAdminList();
+      
     });
 
 
@@ -39,7 +55,12 @@ bookForm.addEventListener("submit", e => {
 
     statut: document.getElementById("statut").value,
 
-    image: document.getElementById("image").value,
+    image:
+    document.getElementById("image").value.trim() === ""
+        ? ""
+        : "images/" +
+          document.getElementById("image").value.trim() +
+          ".jpg",
 
     note: parseInt(document.getElementById("rating").value),
 
@@ -93,6 +114,8 @@ if(saveBtn){
 }
 
 document.getElementById("bookForm").reset();
+
+initialiserFormulaire();
 
 document.getElementById("bookId").value = "";
 
@@ -274,7 +297,10 @@ document.getElementById("année").value = b.annee;
 document.getElementById("dateLecture").value = b.dateLecture || "";
 document.getElementById("support").value = b.support || "";
 
-document.getElementById("image").value = b.image || "";
+document.getElementById("image").value =
+    (b.image || "")
+        .replace("images/","")
+        .replace(".jpg","");
 
 document.getElementById("rating").value = b.note || "";
 
@@ -291,6 +317,13 @@ document.getElementById("resume").value = b.resume || "";
 
 document.getElementById("statut").value =
     b.statut || "lu";
+
+if(!b.dateLecture){
+
+    document.getElementById("dateLecture").selectedIndex =
+        new Date().getMonth();
+
+}
 
   const saveBtn =
     document.getElementById("saveBtn");
@@ -518,3 +551,31 @@ document
     ).style.display = "none";
 
 });
+
+function initialiserFormulaire(){
+
+    const annee = document.getElementById("année");
+
+    annee.innerHTML = "";
+
+    const anneeCourante = new Date().getFullYear();
+
+    for(let a = anneeCourante; a >= 2023; a--){
+
+        annee.innerHTML +=
+            `<option value="${a}">
+                ${a}
+            </option>`;
+
+    }
+
+    annee.value = anneeCourante;
+
+    document.getElementById("support").value = "Livre";
+
+    document.getElementById("statut").value = "lu";
+
+    document.getElementById("dateLecture").selectedIndex =
+        new Date().getMonth();
+
+}

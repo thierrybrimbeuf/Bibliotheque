@@ -96,22 +96,52 @@
     <option value="alire">À lire</option>
 </select>
 
-      <label>Année</label>
-      <input type="number" id="année" required>
+      
+<label>Année</label>
+<select id="année"></select>
 
-      <label>Date de lecture</label>
-      <input type="text" id="dateLecture">
+<label>Mois</label>
+<select id="dateLecture">
 
-      <label>Support</label>
-      <input type="text" id="support">
+    <option>Janvier</option>
+    <option>Février</option>
+    <option>Mars</option>
+    <option>Avril</option>
+    <option>Mai</option>
+    <option>Juin</option>
+    <option>Juillet</option>
+    <option>Août</option>
+    <option>Septembre</option>
+    <option>Octobre</option>
+    <option>Novembre</option>
+    <option>Décembre</option>
+
+</select>
+
+<label>Support</label>
+
+<select id="support">
+
+    <option value="Livre">Livre</option>
+    <option value="BD">BD</option>
+    <option value="Liseuse">Liseuse</option>
+
+</select>
+      
+
+     
 
       <label>Statut</label>
 
       <label>Note</label>
       <input type="number" id="rating" min="0" max="5">
 
-      <label>Image</label>
-      <input type="text" id="image">
+      <label>Nom de l'image (sans le dossier images/ ni .jpg)</label>
+
+<input
+    type="text"
+    id="image"
+    placeholder="Exemple : La-sentence">
 
 
       <label>Résumé</label>

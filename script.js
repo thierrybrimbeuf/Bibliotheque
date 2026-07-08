@@ -16,6 +16,23 @@ const MOIS = [
     "Décembre"
 ];
 
+/******************************************************************
+ * EVOL-003
+ * Sites de recherche
+ ******************************************************************/
+
+const SITES_RECHERCHE = {
+
+    cultura: "https://www.cultura.com/recherche?text=",
+
+    fnac: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=",
+
+    amazon: "https://www.amazon.fr/s?k=",
+
+    googleBooks: "https://books.google.com/books?q="
+
+};
+
 fetch("livres.json")
     .then(response => response.json())
     .then(data => {
@@ -120,6 +137,8 @@ initialiserFormulaire();
 document.getElementById("bookId").value = "";
 
 });
+
+
 
 function etoiles(note) {
 
@@ -510,12 +529,19 @@ function ouvrirLivre(id){
     ).textContent = livre.auteur || "";
 
     document.getElementById(
-        "detailDate"
-    ).textContent = livre.dateLecture || "";
+    "detailAnnee"
+).textContent =
+    livre.annee || "";
 
-    document.getElementById(
-        "detailSupport"
-    ).textContent = livre.support || "";
+document.getElementById(
+    "detailDate"
+).textContent =
+    livre.dateLecture || "";
+
+document.getElementById(
+    "detailSupport"
+).textContent =
+    livre.support || "";
 
         document.getElementById(
         "detailResume"
@@ -530,12 +556,18 @@ function ouvrirLivre(id){
     ).textContent =
         livre.avisPersonnel || "";
 
-    document.getElementById(
-        "detailNote"
-    ).textContent =
-        livre.note
-        ? etoiles(livre.note)
+   document.getElementById(
+    "detailNote"
+).textContent =
+
+    (livre.note !== null &&
+     livre.note !== undefined)
+
+        ? `${etoiles(livre.note)} ${livre.note}/5`
+
         : "Non noté";
+        
+alimenterLiensRecherche(livre);
 
     document.getElementById(
         "detailModal"
@@ -577,5 +609,63 @@ function initialiserFormulaire(){
 
     document.getElementById("dateLecture").selectedIndex =
         new Date().getMonth();
+
+}
+/******************************************************************
+ * EVOL-003
+ * Construction d'une recherche
+ ******************************************************************/
+
+function construireRecherche(titre, auteur) {
+
+    return encodeURIComponent(
+
+        `${titre || ""} ${auteur || ""}`.trim()
+
+    );
+
+}
+
+/******************************************************************
+ * EVOL-003
+ * Alimentation automatique des liens de recherche
+ ******************************************************************/
+
+function alimenterLiensRecherche(livre) {
+
+    const recherche = construireRecherche(
+
+        livre.titre,
+        livre.auteur
+
+    );
+
+    const liens = {
+
+        linkCultura:
+            SITES_RECHERCHE.cultura + recherche,
+
+        linkFnac:
+            SITES_RECHERCHE.fnac + recherche,
+
+        linkAmazon:
+            SITES_RECHERCHE.amazon + recherche,
+
+        linkGoogleBooks:
+            SITES_RECHERCHE.googleBooks + recherche
+
+    };
+
+    Object.entries(liens).forEach(([id, url]) => {
+
+        const lien = document.getElementById(id);
+
+        if (!lien) return;
+
+        lien.href = url;
+
+        lien.classList.remove("disabled");
+
+    });
 
 }

@@ -1867,5 +1867,19 @@
     "critique": "Maria Àngels Anglada livre un roman d'une grande intensité émotionnelle, où la musique devient un symbole d'espoir et de dignité au cœur de l'horreur. Par une écriture sobre et sensible, enrichie de documents historiques authentiques, elle compose un récit poignant qui rend un vibrant hommage à la résilience de l'esprit humain.",
     "avisPersonnel": "Les livres sur les camps de la seconde guerre mondiale sont toujour difficile , mais cela reste un roman captivant et riche d'enseignement",
     "resume": "Auschwitz, 1944. Déporté dans le camp de concentration, Daniel lutte chaque jour pour préserver son humanité au milieu de la violence et de la déshumanisation. Lorsque son talent de luthier est découvert après un concert organisé par le commandant du camp, il se voit confier une mission aussi exceptionnelle que périlleuse : fabriquer un violon capable d'égaler le son d'un Stradivarius. Tandis que le temps lui est compté et que l'échec pourrait lui être fatal, Daniel puise dans son savoir-faire et son amour de la musique une force inattendue. Entre réalité historique et fiction, ce récit met en lumière le pouvoir de l'art face à la barbarie"
+  },
+  {
+    "id": 127,
+    "titre": "IA génératives, pas créatives - L'intelligence artificielle n'existe (toujours) pas",
+    "auteur": "Luc Julia",
+    "annee": 2026,
+    "dateLecture": "Juillet",
+    "support": "Liseuse",
+    "statut": "alire",
+    "image": "images/IA-generatives-pas-creatives-L-intelligence-artificielle-n-existe-toujours-pas.jpg.jpg",
+    "note": 0,
+    "critique": "",
+    "avisPersonnel": "",
+    "resume": "Les enjeux et les impacts des dernières générations d'intelligence artificielle décryptés par un spécialiste mondial de l'IA.\n\nChatGPT vous enthousiasme et vous effraie tout à la fois ? À entendre ses promoteurs, les capacités de l'intelligence artificielle seraient dès aujourd'hui sans limite.\nLuc Julia nous emmène dans un voyage au centre de l'IA, de son histoire et de son potentiel. Il déconstruit les idées reçues les plus répandues, à commencer par celle selon laquelle les IA génératives seraient créatives. Car, bien qu'impressionnantes, ces technologies ne font que (re)produire et (re)générer des données existantes en réponse à un prompt que nous formulons.\nDes limites techniques aux enjeux sociétaux, des menaces réelles qui pèsent sur l'information, sur l'emploi ou sur l'environnement aux mirages de la science-fiction, IA génératives, pas créatives présente le vrai visage de ces outils qui transforment notre quotidien de mille et une façons.\nUn tour d'horizon clair et sans faux-semblants, par l'une des grandes figures de l'IA en France et outre-Atlantique."
   }
 ]

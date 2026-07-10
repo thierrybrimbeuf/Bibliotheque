@@ -15,13 +15,29 @@ header {
     padding: 40px 20px;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 3em;
+header h1{
+
+    margin-bottom:12px;
+
+    font-size:3.3rem;
+
+    font-family:Georgia,serif;
+
+    color:#f8d27a;
+
+    text-shadow:
+        2px 2px 8px rgba(0,0,0,.45);
 }
 
-header p {
-    color: #9ca3af;
+header p{
+
+    color:#d6d3d1;
+
+    font-size:1.05rem;
+
+    letter-spacing:.03em;
+
+    margin-bottom:25px;
 }
 
 .stats {
@@ -51,30 +67,44 @@ header p {
         0 5px 15px rgba(0,0,0,0.25);
 }
 
-.search-zone {
-    text-align: center;
-    margin-bottom: 40px;
+.search-zone{
+
+    text-align:center;
+
+    margin:15px auto 40px;
+
+    max-width:650px;
 }
 
 .search-zone input{
 
-    width:80%;
-    max-width:500px;
+    width:100%;
 
-    padding:15px;
-
-    border-radius:15px;
+    padding:16px 20px;
 
     border:none;
+
+    border-radius:30px;
 
     background:#1f2937;
 
     color:white;
 
-    font-size:1em;
+    font-size:1rem;
+
+    transition:.25s;
 
     box-shadow:
-        inset 0 0 10px rgba(0,0,0,0.3);
+        inset 0 0 12px rgba(0,0,0,.35);
+}
+
+.search-zone input:focus{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 3px rgba(96,165,250,.30),
+        inset 0 0 12px rgba(0,0,0,.35);
 }
 
 #bibliotheque {
@@ -142,12 +172,12 @@ header p {
     transition:transform .30s;
 }
 
-.livre-card:hover img{
+.livre-card:hover img {
 
     transform:scale(1.03);
 }
 
-.contenu{
+.contenu {
 
     display:flex;
 
@@ -158,7 +188,7 @@ header p {
     padding:22px;
 }
 
-.contenu h2{
+.contenu h2 {
 
     margin:0 0 10px;
 
@@ -171,16 +201,17 @@ header p {
     min-height:3.1em;
 }
 
-.auteur{
+.auteur {
 
-    color:#cbd5e1;
+    color:#60a5fa;
 
     font-size:.95rem;
 
     margin-top:4px;
-}
 
-.infos{
+    font-weight:500;
+}
+.infos {
 
     display:flex;
 
@@ -200,16 +231,33 @@ header p {
 }
 
 .etoiles {
-    color: gold;
+
+    color:#f8d27a;
+
+    font-size:1.05rem;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
 }
 
+
 details {
-    margin-top: 15px;
+
+    margin-top:auto;
+
+    padding-top:15px;
 }
 
 summary {
-    cursor: pointer;
-    color: #60a5fa;
+
+    cursor:pointer;
+
+    color:#60a5fa;
+
+    font-weight:bold;
+
+    transition:.25s;
 }
 
 summary:hover {
@@ -218,21 +266,39 @@ summary:hover {
 
 /* Ligne auteur + support */
 
-.meta-livre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+.meta-livre{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:12px 0 18px;
 }
 
 /* Badge support */
 
-.support {
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: white;
+.support{
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:.80rem;
+
+    font-weight:bold;
+
+    letter-spacing:.04em;
+
+    color:white;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.25);
+
+    white-space:nowrap;
 }
 
 .support.livre {
@@ -272,34 +338,44 @@ summary:hover {
 /* ===== ETAGERE DES ANNEES ===== */
 
 #filtres{
+
     display:flex;
+
     justify-content:center;
+
     align-items:flex-end;
-    gap:8px;
-    margin:30px 0;
-    border-bottom:8px solid #8B5A2B;
-    padding-bottom:10px;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px 0 25px;
+
+    padding-bottom:12px;
+
+    border-bottom:10px solid #8B5A2B;
 }
 
 #filtres button{
 
-    min-width:120px;
-
-    height:55px;
+   min-width:130px;
+height:60px;
 
     border:none;
 
-    border-radius:8px 8px 0 0;
+    border-radius:10px 10px 0 0;
 
     color:white;
 
     font-weight:bold;
 
-    font-size:1rem;
+    font-size:1.02rem;
 
     cursor:pointer;
 
-    transition:0.3s;
+   transition:
+    transform .25s,
+    box-shadow .25s;
 
     writing-mode:initial;
 
@@ -339,9 +415,12 @@ button[data-annee="toutes"]{
 
 #filtres button.actif{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
-    border-bottom:4px solid #f8d27a;
+    border-bottom:5px solid #f8d27a;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.35);
 }
 
 .admin-zone{
@@ -522,11 +601,15 @@ button[data-annee="toutes"]{
         0 5px 15px rgba(0,0,0,0.4);
     transition:0.3s;
     display:inline-block;
+    letter-spacing:.04em;
+    font-size:1rem;
 }
 
 .admin-btn:hover{
 
-    transform:translateY(-3px);
+    transform:
+    translateY(-3px)
+    scale(1.03);
 
     box-shadow:
         0 10px 20px rgba(0,0,0,0.5);
@@ -735,7 +818,7 @@ button[data-annee="toutes"]{
     grid-template-columns:
         repeat(auto-fit,minmax(350px,1fr));
 
-    gap:40px;
+    gap:45px;
 
     padding:30px;
 }
@@ -759,7 +842,7 @@ button[data-annee="toutes"]{
 
     width:90%;
 
-    height:14px;
+    height:16px;
 
     background:
         linear-gradient(
@@ -768,10 +851,10 @@ button[data-annee="toutes"]{
             #6b3f1d
         );
 
-    border-radius:2px;
+    border-radius:3px;
 
     box-shadow:
-        0 3px 8px rgba(0,0,0,0.5);
+        0 5px 10px rgba(0,0,0,.55);
 
     z-index:-1;
 }
@@ -1043,7 +1126,55 @@ button[data-annee="alire"]{
     cursor:default;
 }
 
+@media (max-width:1100px){
+
+    #bibliotheque{
+
+        grid-template-columns:
+            repeat(2,minmax(320px,1fr));
+    }
+
+}
+
 @media (max-width:700px){
+
+    header h1{
+
+        font-size:2.4rem;
+    }
+
+    header p{
+
+        font-size:.95rem;
+    }
+
+    #bibliotheque{
+
+        grid-template-columns:1fr;
+
+        padding:20px;
+
+        gap:30px;
+    }
+
+    #filtres{
+
+        gap:8px;
+    }
+
+    #filtres button{
+
+        min-width:95px;
+
+        height:52px;
+
+        font-size:.90rem;
+    }
+
+    .search-zone{
+
+        margin:15px;
+    }
 
     .detail-content{
 
@@ -1054,7 +1185,7 @@ button[data-annee="alire"]{
 
     .detail-cover{
 
-        max-width:200px;
+        max-width:190px;
     }
 
     .detail-identite h2{
@@ -1066,4 +1197,5 @@ button[data-annee="alire"]{
 
         grid-template-columns:1fr;
     }
+
 }

@@ -11,36 +11,50 @@
 
 <body>
 
-<header>
 
-    <h1>📚 Ma Bibliothèque</h1>
+    <header class="header-bois">
 
-    <p>Mes lectures et avis personnels</p>
+  <div class="header-centre">
 
-</header>
+    <img
+        src="images/logo-bibliotheque.png"
+        alt="Mes lectures de retraité"
+        class="logo-site">
 
-<div class="admin-zone">
+    <div class="titre-site">
 
-    <button id="adminBtn"
-            class="admin-btn">
+        <h1>Mes lectures de retraité</h1>
 
-        📚 Administration
+        <p>Les livres qui m'ont accompagné</p>
 
-    </button>
+    </div>
 
 </div>
 
+    <div class="header-actions">
+
+        <section class="search-zone">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Rechercher un livre ou un auteur...">
+
+        </section>
+
+        <button
+            id="adminBtn"
+            class="admin-btn">
+
+            Administration ⚙
+
+        </button>
+
+    </div>
+
+</header>
+
 <nav id="filtres"></nav>
-
-<section class="search-zone">
-
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="Rechercher un livre ou un auteur..."
-    >
-
-</section>
 
 <main id="bibliotheque">
 

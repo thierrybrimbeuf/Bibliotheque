@@ -212,6 +212,8 @@ header p{
 
     width:100%;
 
+    box-sizing:border-box;
+
     padding:15px 18px;
 
     border-radius:12px;
@@ -1400,12 +1402,20 @@ button[data-annee="alire"]{
 
     .search-zone{
 
-        width:100%;
-    }
+    width:100%;
+
+    max-width:320px;
+
+    margin:0 auto;
+
+    box-sizing:border-box;
+}
 
     .admin-btn{
 
         width:100%;
+
+         max-width:300px;
     }
 
 }

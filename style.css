@@ -58,23 +58,33 @@ body{
 
     text-align:left;
      
-    max-width:750px;
+    max-width:900px;
 }
 
 
 .logo-site{
 
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.logo-site img{
+
     width:380px;
 
     height:auto;
 
-    object-fit:contain;
-
-    flex-shrink:0;
-
-    margin:0;
+    display:block;
 
     transition:.30s;
+}
+
+.logo-site img:hover{
+
+    transform:scale(1.04);
 }
 
 .logo-site:hover{
@@ -86,7 +96,7 @@ body{
 
     margin:0;
 
-    font-size:3.5rem;
+    font-size:3rem;
 
     color:#14213d;
 
@@ -98,21 +108,11 @@ body{
 
     line-height:1.1;
 
-    white-space:nowrap;
+     white-space:wrap;
+
 }
 
-.header-centre h2{
 
-    margin:5px 0;
-
-    color:#ff6a00;
-
-    font-size:2rem;
-
-    letter-spacing:5px;
-
-    font-weight:700;
-}
 
 .header-centre p{
 
@@ -1332,7 +1332,37 @@ button[data-annee="alire"]{
 
     .header-bois{
 
-        padding:25px;
+        padding:20px;
+    }
+
+    .header-centre{
+
+        transform:none;
+
+        justify-content:center;
+
+        text-align:center;
+
+        gap:18px;
+    }
+
+    .titre-site{
+
+        text-align:center;
+
+        max-width:100%;
+    }
+
+    .header-centre h1{
+
+        font-size:2.4rem;
+
+        white-space:normal;
+    }
+
+    .header-centre p{
+
+        font-size:1.2rem;
     }
 
     .header-actions{
@@ -1341,21 +1371,41 @@ button[data-annee="alire"]{
 
         width:100%;
 
-        margin-top:25px;
+        margin-top:20px;
     }
 
-    .logo-site{
+}
 
-        width:130px;
+@media (max-width:700px){
+
+    .logo-site img{
+
+        width:170px;
+    }
+
+    .header-centre{
+
+        flex-direction:column;
     }
 
     .header-centre h1{
 
-        font-size:2.2rem;
+        font-size:2rem;
     }
 
-    .header-centre h2{
+    .header-centre p{
 
-        font-size:1.5rem;
+        font-size:1rem;
     }
+
+    .search-zone{
+
+        width:100%;
+    }
+
+    .admin-btn{
+
+        width:100%;
+    }
+
 }

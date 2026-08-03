@@ -23,7 +23,7 @@ const MOIS = [
 
 const SITES_RECHERCHE = {
 
-    cultura: "https://www.cultura.com/recherche?text=",
+     cultura: "https://www.cultura.com/search/results?search_query=",
 
     fnac: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=",
 
@@ -65,9 +65,17 @@ bookForm.addEventListener("submit", e => {
 
     titre: document.getElementById("titre").value,
     auteur: document.getElementById("auteur").value,
-    annee: parseInt(document.getElementById("année").value),
+    
+    annee:
+document.getElementById("année").value === ""
+    ? null
+    : parseInt(document.getElementById("année").value),
 
-    dateLecture: document.getElementById("dateLecture").value,
+   dateLecture:
+document.getElementById("dateLecture").disabled
+    ? ""
+    : document.getElementById("dateLecture").value,
+
     support: document.getElementById("support").value,
 
     statut: document.getElementById("statut").value,
@@ -160,8 +168,10 @@ function creerFiltresAnnees() {
     nav.appendChild(btnToutes);
 
     const annees = [...new Set(
-        tousLesLivres.map(livre => livre.annee)
-    )].sort((a,b) => b-a);
+    tousLesLivres
+        .filter(livre => livre.annee !== null)
+        .map(livre => livre.annee)
+)].sort((a, b) => b - a);
 
 const nbALire =
 tousLesLivres.filter(
@@ -337,12 +347,12 @@ document.getElementById("resume").value = b.resume || "";
 document.getElementById("statut").value =
     b.statut || "lu";
 
-if(!b.dateLecture){
+    document.getElementById("statut").dataset.old =
+    b.statut || "lu";
 
-    document.getElementById("dateLecture").selectedIndex =
-        new Date().getMonth();
+gererStatutLecture(false);
 
-}
+
 
   const saveBtn =
     document.getElementById("saveBtn");
@@ -584,6 +594,102 @@ document
 
 });
 
+document.getElementById("statut")
+.addEventListener("change", function(){
+
+    const ancienStatut =
+        this.dataset.old || "";
+
+    if(
+        ancienStatut === "encours"
+        &&
+        this.value === "lu"
+    ){
+
+        gererStatutLecture(true);
+
+    }else if(
+        ancienStatut === "alire"
+    ){
+
+        gererStatutLecture(true);
+
+    }else{
+
+        gererStatutLecture(false);
+
+    }
+
+    this.dataset.old = this.value;
+
+});
+
+/******************************************************************
+ * BUG-0003
+ * Gestion automatique des dates selon le statut
+ ******************************************************************/
+
+function dateCouranteLecture() {
+
+    const now = new Date();
+
+    return {
+        annee: now.getFullYear(),
+        mois: now.getMonth()
+    };
+}
+
+function gererStatutLecture(force = false) {
+
+    const statut = document.getElementById("statut");
+    const annee = document.getElementById("année");
+    const mois = document.getElementById("dateLecture");
+
+    const date = dateCouranteLecture();
+
+    switch(statut.value){
+
+        case "alire":
+
+            annee.value = "";
+            mois.selectedIndex = -1;
+
+            annee.disabled = true;
+            mois.disabled = true;
+
+            break;
+
+        case "encours":
+
+            annee.disabled = false;
+            mois.disabled = false;
+
+            if(force || annee.value === ""){
+
+                annee.value = date.annee;
+                mois.selectedIndex = date.mois;
+
+            }
+
+            break;
+
+        case "lu":
+
+            annee.disabled = false;
+            mois.disabled = false;
+
+            if(force){
+
+                annee.value = date.annee;
+                mois.selectedIndex = date.mois;
+
+            }
+
+            break;
+    }
+
+}
+
 function initialiserFormulaire(){
 
     const annee = document.getElementById("année");
@@ -605,10 +711,11 @@ function initialiserFormulaire(){
 
     document.getElementById("support").value = "Livre";
 
-    document.getElementById("statut").value = "lu";
+  document.getElementById("statut").value = "lu";
 
-    document.getElementById("dateLecture").selectedIndex =
-        new Date().getMonth();
+document.getElementById("statut").dataset.old = "lu";
+
+gererStatutLecture(true);
 
 }
 /******************************************************************

@@ -17,6 +17,55 @@ const MOIS = [
 ];
 
 /******************************************************************
+ * EVOL-004E-01
+ * Tri chronologique des livres
+ ******************************************************************/
+
+const ORDRE_MOIS = {
+    "Janvier": 1,
+    "Février": 2,
+    "Mars": 3,
+    "Avril": 4,
+    "Mai": 5,
+    "Juin": 6,
+    "Juillet": 7,
+    "Août": 8,
+    "Septembre": 9,
+    "Octobre": 10,
+    "Novembre": 11,
+    "Décembre": 12
+};
+
+function trierLivres(livres){
+
+    return [...livres].sort((a,b)=>{
+
+        // Année décroissante
+        if((a.annee ?? 0) !== (b.annee ?? 0)){
+            return (b.annee ?? 0) - (a.annee ?? 0);
+        }
+
+        // Mois décroissant
+        const moisA = ORDRE_MOIS[a.dateLecture] ?? 0;
+        const moisB = ORDRE_MOIS[b.dateLecture] ?? 0;
+
+        if(moisA !== moisB){
+            return moisB - moisA;
+        }
+
+        // Titre alphabétique
+        return a.titre.localeCompare(
+            b.titre,
+            "fr",
+            { sensitivity:"base" }
+        );
+
+    });
+
+}
+
+
+/******************************************************************
  * EVOL-003
  * Sites de recherche
  ******************************************************************/
@@ -208,7 +257,7 @@ function afficherLivres(livres) {
 
     bibliotheque.innerHTML = "";
 
-    livres.forEach(livre => {
+   trierLivres(livres).forEach(livre => {
 
         bibliotheque.innerHTML += `
 
@@ -225,37 +274,25 @@ function afficherLivres(livres) {
 
             <div class="contenu">
 
-                <h2>${livre.titre}</h2>
+    <h2>${livre.titre}</h2>
 
-                <div class="meta-livre">
+    <p class="auteur">${livre.auteur}</p>
 
-                    <p class="auteur">${livre.auteur}</p>
+    <div class="support-centre">
 
-                    <span class="support">${livre.support}</span>
+        <span class="support">
+            ${livre.support}
+        </span>
 
-                </div>
+    </div>
 
-                <div class="infos">
+ <div class="btn-details">
 
-                    <span class="etoiles">${etoiles(livre.note)}</span>
+    📖 Accès aux détails
 
-                    <span>${livre.dateLecture}</span>
+</div>
 
-                </div>
-
-                <h3>Mon avis</h3>
-
-                <p>${livre.avisPersonnel || ""}</p>
-
-                <details>
-
-                    <summary>Voir le résumé</summary>
-
-                    <p>${livre.resume}</p>
-
-                </details>
-
-            </div>
+</div>
 
         </article>
         `;
@@ -380,7 +417,7 @@ document
 
     a.href = URL.createObjectURL(blob);
 
-    a.download = "books.json";
+    a.download = "livres.json";
 
     a.click();
 });

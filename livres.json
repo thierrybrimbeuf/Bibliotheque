@@ -1923,5 +1923,33 @@
     "critique": "Inès Léraud réussit à transformer une enquête journalistique complexe en un récit accessible et particulièrement prenant. Servi par le dessin précis et expressif de Pierre Van Hove, cet ouvrage conjugue pédagogie, rigueur documentaire et sens du récit, offrant une lecture aussi instructive que captivante.",
     "avisPersonnel": "",
     "resume": "ournaliste d'investigation, Inès Léraud enquête sur la prolifération des algues vertes qui envahissent régulièrement les côtes bretonnes. Au fil de ses recherches, elle recueille les témoignages d'habitants, d'agriculteurs, de scientifiques et de responsables locaux, révélant les conséquences environnementales, économiques et sanitaires d'un phénomène connu depuis des décennies. Entre pressions, silences et intérêts contradictoires, cette bande dessinée retrace une enquête rigoureuse qui met en lumière les difficultés rencontrées pour faire émerger la vérité sur un sujet sensible."
+  },
+  {
+    "id": 131,
+    "titre": "Profileuse",
+    "auteur": "Audrey renard",
+    "annee": 2026,
+    "dateLecture": "Août",
+    "support": "Livre",
+    "statut": "lu",
+    "image": "images/Profileuse.jpg",
+    "note": 4,
+    "critique": "Audrey Renard propose un témoignage captivant qui allie rigueur scientifique et sens de la pédagogie. En s'appuyant sur son expérience de terrain, elle offre un regard éclairant sur l'analyse comportementale criminelle et démystifie avec justesse le métier de profileur, bien loin des représentations de la fiction.",
+    "avisPersonnel": "Tres bon! Livre qui décrit la psychologie des criminels sans  voyeurisme ",
+    "resume": "Au sein de la Gendarmerie nationale, Audrey Renard dirige le Département des sciences du comportement, où elle intervient dans les enquêtes criminelles les plus complexes. À travers plusieurs affaires réelles, elle dévoile le travail des profileurs : analyse des scènes de crime, étude de la personnalité des auteurs, stratégies d'audition et accompagnement des enquêteurs. Loin des clichés véhiculés par les séries télévisées, cet ouvrage montre comment la psychologie et l'analyse comportementale contribuent à comprendre le passage à l'acte criminel. Une immersion passionnante dans les coulisses d'un métier aussi exigeant que méconnu."
+  },
+  {
+    "id": 132,
+    "titre": "Champs de bataille ",
+    "auteur": "Ines Léraud - Léandre MAnsard",
+    "annee": 2026,
+    "dateLecture": "Août",
+    "support": "BD",
+    "statut": "encours",
+    "image": "images/Champs-de-bataille-L-histoire-enfouie-du-remembrement.jpg",
+    "note": null,
+    "critique": "Après Algues vertes, Inès Léraud livre une nouvelle enquête d'une remarquable rigueur, portée par une solide documentation et un récit accessible. Le dessin précis et expressif de Pierre Van Hove accompagne avec justesse cette exploration historique, faisant de cette bande dessinée un ouvrage aussi instructif que profondément marquant.",
+    "avisPersonnel": "",
+    "resume": "Au lendemain de la Seconde Guerre mondiale, la France engage un vaste remembrement destiné à moderniser l'agriculture et à accroître les rendements. Derrière cette transformation des paysages se cachent pourtant des drames humains longtemps passés sous silence. En s'appuyant sur des archives, des témoignages et les travaux d'historiens, Inès Léraud retrace l'histoire de cette politique qui a profondément bouleversé les campagnes françaises. Cette enquête met en lumière les conséquences sociales, environnementales et culturelles d'un épisode majeur, mais largement méconnu, de notre histoire contemporaine."
   }
 ]

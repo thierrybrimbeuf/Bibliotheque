@@ -1486,3 +1486,74 @@ button[data-annee="alire"]{
     transform:translateY(-2px);
 
 }
+
+/* =====================================
+   EVOL-004E-05
+   Statut de lecture
+   ===================================== */
+
+.statut-centre{
+
+    margin:0 0 18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.statut-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:.80rem;
+
+    font-weight:bold;
+
+    letter-spacing:.03em;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.25);
+
+    white-space:nowrap;
+
+}
+
+.statut-lu{
+    background:#2e8b57;
+}
+
+.statut-encours{
+    background:#d97706;
+}
+
+.statut-alire{
+    background:#b91c1c;
+}
+
+.statut-inconnu{
+    background:#6b7280;
+}
+
+.detail-statut{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:.90rem;
+
+}

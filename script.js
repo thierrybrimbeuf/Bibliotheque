@@ -203,6 +203,47 @@ function etoiles(note) {
 
 }
 
+/* =====================================
+   EVOL-004E-05
+   Affichage du statut de lecture
+   ===================================== */
+
+function libelleStatut(statut) {
+
+    switch(statut) {
+
+        case "lu":
+            return "Lu";
+
+        case "encours":
+            return "Lecture en cours";
+
+        case "alire":
+            return "À lire";
+
+        default:
+            return "Statut inconnu";
+    }
+}
+
+function classeStatut(statut) {
+
+    switch(statut) {
+
+        case "lu":
+            return "statut-lu";
+
+        case "encours":
+            return "statut-encours";
+
+        case "alire":
+            return "statut-alire";
+
+        default:
+            return "statut-inconnu";
+    }
+}
+
 function creerFiltresAnnees() {
 
     const nav = document.getElementById("filtres");
@@ -282,6 +323,14 @@ function afficherLivres(livres) {
 
         <span class="support">
             ${livre.support}
+        </span>
+
+    </div>
+
+    <div class="statut-centre">
+
+        <span class="statut-badge ${classeStatut(livre.statut)}">
+            ${libelleStatut(livre.statut)}
         </span>
 
     </div>
@@ -576,6 +625,16 @@ function ouvrirLivre(id){
     ).textContent = livre.auteur || "";
 
     document.getElementById(
+    "detailStatut"
+).textContent =
+    libelleStatut(livre.statut);
+
+document.getElementById(
+    "detailStatut"
+).className =
+    `detail-statut ${classeStatut(livre.statut)}`;
+
+document.getElementById(
     "detailAnnee"
 ).textContent =
     livre.annee || "";

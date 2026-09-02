@@ -1957,13 +1957,27 @@
     "titre": "Coeur noir",
     "auteur": "Silvia Avalonne",
     "annee": 2026,
-    "dateLecture": "Août",
+    "dateLecture": "Septembre",
     "support": "Livre",
-    "statut": "encours",
+    "statut": "lu",
     "image": "images/Coeur-noir.jpg",
     "note": 3,
     "critique": "Silvia Avallone construit un roman profondément humain, porté par deux personnages complexes dont les blessures et les secrets nourrissent une tension constante. Son écriture sensible et puissante explore avec justesse la culpabilité, le pardon et la possibilité d'un nouveau départ, dans une atmosphère de montagne particulièrement évocatrice.",
     "avisPersonnel": "",
     "resume": "Dans un petit hameau isolé des Alpes italiennes, Emilia, une jeune femme d'une trentaine d'années, vient chercher refuge loin du monde et de son passé. Bruno, l'instituteur du village, vit lui aussi en retrait, marqué par une histoire douloureuse qu'il refuse de partager. Méfiants l'un envers l'autre, ces deux êtres blessés vont pourtant peu à peu se rapprocher et découvrir une fragilité commune. Mais à Sassaia, le silence protège autant qu'il enferme, et les secrets du passé menacent l'équilibre fragile qu'ils tentent de construire. Entre culpabilité, amour et désir de rédemption, Silvia Avallone raconte le difficile chemin vers une possible renaissance."
+  },
+  {
+    "id": 134,
+    "titre": "La jurée ",
+    "auteur": "Claire Jéhanno",
+    "annee": 2026,
+    "dateLecture": "Septembre",
+    "support": "Livre",
+    "statut": "encours",
+    "image": "",
+    "note": null,
+    "critique": "Claire Jéhanno propose un premier roman maîtrisé, qui restitue avec réalisme le fonctionnement d’une cour d’assises tout en développant une intrigue profondément psychologique. La construction entre le procès et le passé d’Anna entretient efficacement le suspense et permet d’explorer avec finesse les rapports entre mémoire, vérité, jugement et responsabilité",
+    "avisPersonnel": "",
+    "resume": "Anna Zeller est tirée au sort pour devenir jurée à la cour d’assises. Pendant une semaine, elle doit participer au jugement d’un couple sans antécédents, accusé d’empoisonnement et de meurtre. Au fil du procès, les témoignages, les débats et les incertitudes qui entourent l’affaire amènent Anna à s’interroger sur sa propre manière de juger et sur la fragilité des évidences. Surtout, cette expérience fait resurgir un événement survenu vingt ans plus tôt en Bretagne, un épisode familial qu’elle croyait pourtant connaître. Alors que le procès avance, passé et présent se mêlent et bouleversent progressivement ses certitudes."
   }
 ]

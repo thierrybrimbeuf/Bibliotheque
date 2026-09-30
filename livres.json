@@ -1993,5 +1993,33 @@
     "critique": "Un ouvrage accessible et pédagogique qui associe des explications scientifiques à des conseils concrets pour mieux maîtriser son usage des écrans. La démarche est pragmatique et permet de prendre du recul sur des habitudes numériques devenues presque automatiques, sans se limiter à une simple dénonciation du smartphone et des réseaux sociaux.",
     "avisPersonnel": "Très bine ; A lire par tous!",
     "resume": "Smartphone, notifications, réseaux sociaux et navigation sur Internet occupent une place croissante dans notre quotidien, au point de modifier notre attention, nos habitudes et parfois notre sommeil. Dans cet ouvrage, Thibaud Dumas, docteur en neurosciences, s’intéresse aux mécanismes de l’hyperconnexion et à ses conséquences, notamment sur le cerveau et l’environnement. Il propose de mieux comprendre pourquoi nous avons tant de mal à décrocher, puis d’identifier les habitudes qui entretiennent cette dépendance aux écrans. Des conseils et des exercices pratiques permettent enfin de reprendre progressivement le contrôle de son temps numérique, aussi bien dans la vie personnelle que professionnelle."
+  },
+  {
+    "id": 136,
+    "titre": "Les Naufragés hurleurs",
+    "auteur": " Carayon, Christian",
+    "annee": 2026,
+    "dateLecture": "Septembre",
+    "support": "Livre",
+    "statut": "encours",
+    "image": "images/Les-naufrages-hurleurs.jpg",
+    "note": 4,
+    "critique": "Christian Carayon construit une intrigue policière classique mais solidement maîtrisée, dans laquelle l'enquête de Martial s'appuie autant sur la recherche de la vérité que sur le doute suscité par les sciences occultes. L'atmosphère de l'île de Bréhat, les secrets familiaux et les descriptions de la mer donnent au roman une dimension particulièrement évocatrice, même si la mise en place assez détaillée demande un peu de patience avant que l'enquête ne prenne pleinement son rythme.",
+    "avisPersonnel": "",
+    "resume": "En 1925, Martial de la Boissière, passionné d'énigmes et membre du Cercle Cardan, s'emploie à démasquer les charlatans qui exploitent l'engouement pour les sciences occultes. Lors d'une séance avec le médium Collas, son ami d'enfance Alain reçoit une étrange prédiction : il serait bientôt en danger et devrait fuir. Quelques mois plus tard, Alain trouve la mort dans le naufrage de son voilier au large de l'île de Bréhat. Marin expérimenté, il n'aurait pourtant pas dû disparaître aussi facilement. Martial décide alors de comprendre ce qui s'est réellement passé. Son enquête le conduit à Bréhat, au cœur d'une riche famille où secrets, vieilles rancœurs et croyances mystérieuses semblent étroitement liés."
+  },
+  {
+    "id": 137,
+    "titre": "Qui sème le plomb",
+    "auteur": "Chris Tabbart",
+    "annee": 2026,
+    "dateLecture": "Septembre",
+    "support": "Livre",
+    "statut": "lu",
+    "image": "images/Qui-sème-le-plomb.jpg",
+    "note": 1,
+    "critique": "Chris Tabbart propose un polar de terroir efficace, qui associe enquête policière, rivalités locales et touches d'humour. Le contraste entre les habitudes du capitaine Carpioni, venu de Marseille, et celles de son adjoint, bien implanté dans le Luberon, apporte une dimension humaine agréable à l'enquête et donne au roman une tonalité originale.Chris Tabbart propose un polar de terroir efficace, qui associe enquête policière, rivalités locales et touches d'humour. Le contraste entre les habitudes du capitaine Carpioni, venu de Marseille, et celles de son adjoint, bien implanté dans le Luberon, apporte une dimension humaine agréable à l'enquête et donne au roman une tonalité originale.",
+    "avisPersonnel": "Livre de gare avec peu d'intéret a jeter après lecture ",
+    "resume": "Après avoir quitté Marseille, le capitaine de police Georges Carpioni découvre une nouvelle affectation dans le Luberon, région rurale où il espérait trouver davantage de tranquillité. Mais les tensions entre chasseurs et militants anti-chasse donnent rapidement du travail au policier. Lorsqu'une affaire criminelle vient troubler cette apparente quiétude, Carpioni doit mener sa première enquête dans un environnement qu'il connaît mal. Son adjoint Garrido, originaire de la région, lui apporte une aide précieuse pour comprendre les habitudes locales et les rivalités qui opposent les habitants. Entre conflits de voisinage, vieilles connaissances et règlements de comptes, le capitaine va découvrir que la campagne peut être aussi mouvementée que la cité phocéenne."
   }
 ]

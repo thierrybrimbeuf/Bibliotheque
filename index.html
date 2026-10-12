@@ -301,6 +301,26 @@
 
         </section>
 
+        <!-- EVOL-011 : Lecture audio de la fiche -->
+        <section class="detail-audio" aria-label="Lecture audio de la fiche">
+            <h3>🔊 Écouter cette fiche</h3>
+            <div class="detail-audio-buttons">
+                <button type="button" id="audioPresentation" class="audio-button audio-blue">
+                    🔊 Lire la présentation
+                </button>
+                <button type="button" id="audioResume" class="audio-button audio-red">
+                    📖 Lire le résumé
+                </button>
+                <button type="button" id="audioCritique" class="audio-button audio-blue">
+                    📰 Lire la critique
+                </button>
+                <button type="button" id="audioStop" class="audio-button audio-stop">
+                    ⏹ Arrêter la lecture
+                </button>
+            </div>
+            <p id="audioStatus" class="audio-status" role="status" aria-live="polite"></p>
+        </section>
+
         <!-- Résumé -->
 
         <section class="detail-section">

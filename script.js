@@ -605,6 +605,83 @@ function imageLivre(book){
 
 }
 
+/******************************************************************
+ * EVOL-011 — Lecture audio de la fiche (synthèse vocale du navigateur)
+ ******************************************************************/
+
+function afficherStatutAudio(message) {
+    const statut = document.getElementById("audioStatus");
+    if (statut) statut.textContent = message || "";
+}
+
+function arreterLectureAudio(effacerStatut = false) {
+    if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+    }
+    if (effacerStatut) afficherStatutAudio("");
+}
+
+function lireTexteAudio(texte, description) {
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        afficherStatutAudio("La lecture audio n'est pas prise en charge par ce navigateur.");
+        return;
+    }
+
+    const texteALire = (texte || "").trim();
+    if (!texteALire) {
+        afficherStatutAudio("Aucun texte disponible pour cette lecture.");
+        return;
+    }
+
+    // Évite que deux lectures se superposent.
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(texteALire);
+    utterance.lang = "fr-FR";
+    utterance.rate = 0.95;
+    utterance.pitch = 1;
+    utterance.onstart = () => afficherStatutAudio("Lecture en cours : " + description + "…");
+    utterance.onend = () => afficherStatutAudio("Lecture terminée : " + description + ".");
+    utterance.onerror = (event) => {
+        if (event.error !== "canceled" && event.error !== "interrupted") {
+            afficherStatutAudio("La lecture audio n'a pas pu démarrer. Vérifiez les voix disponibles sur l'appareil.");
+        }
+    };
+
+    window.speechSynthesis.speak(utterance);
+}
+
+function initialiserCommandesAudio() {
+    document.getElementById("audioPresentation")?.addEventListener("click", () => {
+        const parties = [
+            "Titre : " + (document.getElementById("detailTitre")?.textContent || ""),
+            "Auteur : " + (document.getElementById("detailAuteur")?.textContent || ""),
+            "Année : " + (document.getElementById("detailAnnee")?.textContent || ""),
+            "Statut : " + (document.getElementById("detailStatut")?.textContent || ""),
+            "Mois de lecture : " + (document.getElementById("detailDate")?.textContent || ""),
+            "Support : " + (document.getElementById("detailSupport")?.textContent || ""),
+            "Note : " + (document.getElementById("detailNote")?.textContent || "")
+        ].filter(partie => !partie.endsWith(": "));
+        lireTexteAudio(parties.join(". "), "la présentation");
+    });
+
+    document.getElementById("audioResume")?.addEventListener("click", () => {
+        lireTexteAudio(document.getElementById("detailResume")?.textContent, "le résumé");
+    });
+
+    document.getElementById("audioCritique")?.addEventListener("click", () => {
+        lireTexteAudio(document.getElementById("detailCritique")?.textContent, "la critique");
+    });
+
+    document.getElementById("audioStop")?.addEventListener("click", () => {
+        arreterLectureAudio();
+        afficherStatutAudio("Lecture arrêtée.");
+    });
+}
+
+// Initialisation des boutons audio après le chargement du script.
+initialiserCommandesAudio();
+
 function ouvrirLivre(id){
 
     const livre =
@@ -684,6 +761,7 @@ document
 .getElementById("closeDetail")
 ?.addEventListener("click",()=>{
 
+    arreterLectureAudio(true);
     document.getElementById(
         "detailModal"
     ).style.display = "none";
